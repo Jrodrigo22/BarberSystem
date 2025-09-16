@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BarberSystem</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f1e6; /* Bege Claro */
+      color: #111; /* Preto */
+    }
+
+    header {
+      background-color: #3b2b2b; /* Marrom Escuro */
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+      color: #d4af37; /* Dourado */
+    }
+
+    header p {
+      margin: 5px 0 0;
+      font-size: 16px;
+      color: #fff;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #d4af37;
+    }
+
+    .container {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .button {
+      background-color: #d4af37; /* Dourado */
+      color: #111; /* Preto */
+      padding: 15px 30px;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 18px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .button:hover {
+      background-color: #b9972d;
+    }
+
+    .servicos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: #fff;
+      border: 2px solid #d4af37; /* Borda dourada */
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      color: #3b2b2b; /* Marrom Escuro */
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #3b2b2b; /* Marrom Escuro */
+      color: #fff;
+      padding: 20px 0;
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BarberSystem</h1>
+    <p>Seu agendamento online com estilo</p>
+    <nav>
+      <a href="#servicos">Serviços</a>
+      <a href="#combos">Combos</a>
+      <a href="#agendamento">Agendamento</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Escolha seu corte e agende com facilidade</h2>
+    <a class="button" href="#agendamento">Agendar Agora</a>
+
+    <section id="servicos">
+      <h2>Serviços</h2>
+      <div class="servicos">
+        <div class="card">
+          <h3>Corte Clássico</h3>
+          <p>Corte completo, finalização com navalha.</p>
+          <p><strong>R$ 40</strong></p>
+          <a class="button" href="#agendamento">Selecionar</a>
+        </div>
+        <div class="card">
+          <h3>Corte Moderno</h3>
+          <p>Corte estilizado, versátil.</p>
+          <p><strong>R$ 50</strong></p>
+          <a class="button" href="#agendamento">Selecionar</a>
+        </div>
+        <div class="card">
+          <h3>Barba</h3>
+          <p>Modelagem com acabamento na navalha.</p>
+          <p><strong>R$ 30</strong></p>
+          <a class="button" href="#agendamento">Selecionar</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer id="contato">
+    <p>📍 Rua Exemplo, 123 - Gravataí/RS</p>
+    <p>📞 (11) 99999-9999</p>
+    <p>WhatsApp: (11) 98888-8888</p>
+  </footer>
+</body>
+</html>
